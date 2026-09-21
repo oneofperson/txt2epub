@@ -83,7 +83,7 @@ app/src/main/kotlin/com/txt2epub/app/
 先在 GitHub 上建一个空仓库（**不要**勾选初始化 README / .gitignore / LICENSE，本地已经有了），然后：
 
 ```bash
-git remote add origin https://github.com/oneofperson/<仓库名>.git
+git remote add origin https://github.com/oneofperson/txt2epub.git
 git push -u origin main
 ```
 
