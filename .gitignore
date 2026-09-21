@@ -22,3 +22,6 @@ app/debug
 
 # 本机工作区数据
 /.workbuddy/
+
+# 本机专用构建脚本（写死了本机 Gradle / JDK 路径）
+build.js

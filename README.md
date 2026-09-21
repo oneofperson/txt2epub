@@ -37,10 +37,10 @@
 - Android SDK 34 / build-tools 34.0.0
 - 最低支持 Android 8.0（API 26）
 
-`local.properties` 需要指向本机 SDK：
+`local.properties` 需要指向本机 SDK（用 Android Studio 打开项目时会自动生成，命令行构建才需要手动写）：
 
 ```
-sdk.dir=C:\\Android\\Sdk
+sdk.dir=/你的/Android/Sdk/路径
 ```
 
 ## 构建
@@ -52,12 +52,6 @@ gradlew.bat :app:testDebugUnitTest   # 跑核心链路单元测试
 ```
 
 或直接用 Android Studio 打开本目录，点 Run。
-
-如果所在机器访问不了 `services.gradle.org`（Gradle 官方下载源），`gradlew` 会卡在下载发行包。
-此时任选一种方式代替：
-
-- `node build.js assembleDebug` —— 脚本直接调用本机已安装的 Gradle（路径写在脚本顶部，按需修改）
-- 或手动把 `gradle/wrapper/gradle-wrapper.properties` 里的 `distributionUrl` 指向本地已下载的 `gradle-8.7-bin.zip`
 
 ## 目录结构
 
@@ -77,8 +71,8 @@ app/src/main/kotlin/com/txt2epub/app/
 
 ## 内置目录规则
 
-默认启用：第X卷、第X章/回、第X节、第X篇部集幕、英文 Chapter/Part、数字编号、序/楔子/后记/番外。
-默认关闭（易误判，按需开启）：括号编号、中文数字编号、符号编号。
+默认启用：第X卷、第X章/回、第X节、第X篇部集幕、英文 Chapter/Part、序/楔子/后记/番外。
+默认关闭（易误判，按需开启）：数字编号、括号编号、中文数字编号、符号编号。
 
 规则按顺序匹配，命中即停止。可在 App 内「规则管理」随时调整，自定义规则会自动保存。
 
