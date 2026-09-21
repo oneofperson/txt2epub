@@ -78,6 +78,17 @@ app/src/main/kotlin/com/txt2epub/app/
 - 目录命中与章节切分数量合理（不会把整本书压成一章）
 - 产出的 epub 中 mimetype 存在且为 STORED（未压缩）、container.xml / content.opf / toc.ncx / nav.xhtml / 章节文件齐全
 
+## 上传到 GitHub
+
+先在 GitHub 上建一个空仓库（**不要**勾选初始化 README / .gitignore / LICENSE，本地已经有了），然后：
+
+```bash
+git remote add origin https://github.com/oneofperson/<仓库名>.git
+git push -u origin main
+```
+
+APK 建议作为 GitHub Release 的附件上传，不要提交进仓库（`.gitignore` 已排除 `*.apk`）。
+
 ## 许可证
 
 MIT（见 [LICENSE](LICENSE)）。可以随意使用、修改、商用，只需保留版权声明。
