@@ -18,6 +18,18 @@
 | 封面 | 8 套配色自动生成（渐变+排版），或从相册选图（自动 3:4 居中裁剪），也可不要封面 |
 | 导出 | 生成标准 EPUB 3.0（同时输出 toc.ncx 兼容 EPUB2），可保存到任意位置或用其他应用打开 |
 
+## 界面预览
+
+| 选择文件 | 识别目录 |
+| --- | --- |
+| ![选择 TXT 文件](docs/screenshots/screenshot_01_pick_file.jpg) | ![目录识别](docs/screenshots/screenshot_02_toc.jpg) |
+
+| 书籍信息 | 转换导出 |
+| --- | --- |
+| ![书籍信息](docs/screenshots/screenshot_03_meta.jpg) | ![转换导出](docs/screenshots/screenshot_04_export.jpg) |
+
+截图来自一部 420 万字长篇的实测：识别出 1329 章，转换后产出 6.47 MB 的 EPUB。
+
 ## 环境要求
 
 - Android Studio Koala 或更新（或直接用命令行 Gradle）
