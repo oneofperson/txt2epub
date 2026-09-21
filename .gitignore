@@ -1,0 +1,24 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+.kotlin
+/.kotlin
+local.properties
+app/build
+app/release
+app/debug
+
+# 构建产物与安装包（APK 建议放 GitHub Release，不进仓库）
+/output/
+*.apk
+*.aab
+*.epub
+
+# 本机工作区数据
+/.workbuddy/
